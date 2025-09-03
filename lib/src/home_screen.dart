@@ -23,7 +23,25 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ],
       ),
-      body: Placeholder(),
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: TextField(
+          textAlign: TextAlign.center,
+          decoration: InputDecoration(
+            hintText: 'Pesquisar...',
+            suffixIcon: Padding(
+              padding: const EdgeInsets.only(right: 8.0),
+              child: Icon(Icons.search),
+            ),
+            border: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(30),
+              borderSide: BorderSide.none,
+            ),
+            filled: true,
+            fillColor: Colors.white,
+          ),
+        ),
+      ),
     );
   }
 }
